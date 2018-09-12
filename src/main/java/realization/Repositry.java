@@ -1,5 +1,7 @@
 package realization;
 
+import java.util.List;
+
 /* E – Element (used extensively by the Java Collections Framework, for example ArrayList, Set etc.)
 K – Key (Used in Map)
 N – Number
@@ -7,13 +9,14 @@ T – Type
 V – Value (Used in Map)
 S,U,V etc. – 2nd, 3rd, 4th types
 */
-public interface Instance<T> {
-    public void getAll(T t);
+public interface Repositry<T> {
 
-    public void addNewContact(T t);
+    public List<T> findAll();
 
-    public void removeUserContact(T t);
+    public T save(T t);
 
-    public void removeAll(T t);
+    public T findById(int id);
+
+    public void delete(T t);
 
 }

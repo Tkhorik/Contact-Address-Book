@@ -911,7 +911,11 @@ public class Method {
 				break;
 
 			case 2:
-				group = group.loadGroup(user);				
+				try {
+					group = group.loadGroup(user);
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 				break;
 
 			case 3:

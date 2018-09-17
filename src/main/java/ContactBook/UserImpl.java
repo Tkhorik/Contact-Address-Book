@@ -1,6 +1,6 @@
 package ContactBook;
 
-import realization.Method;
+import impl.Method;
 
 import java.io.*;
 
@@ -51,13 +51,6 @@ public class UserImpl implements User {
 		
 	}
 	
-	//	------------------------------------------------------------------------------------------------------  \\
-	//	----------------------------------------- Getters and Setters ----------------------------------------  \\
-	//	------------------------------------------------------------------------------------------------------  \\
-	
-	/**
-	 * @return the name
-	 */
 	public String getName() {
 		return name;
 	}

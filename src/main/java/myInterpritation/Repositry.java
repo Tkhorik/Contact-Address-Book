@@ -11,12 +11,12 @@ S,U,V etc. – 2nd, 3rd, 4th types
 */
 public interface Repositry<T> {
 
-    public List<T> findAll();
+    List<T> findAll();
 
-    public T save(T t);
+    T save(T t);
 
-    public T findById(int id);
+    T findById(String id);
 
-    public void delete(T t);
+    void delete(T t);
 
 }

@@ -1,6 +1,6 @@
 package myInterpritation;
 
-import realization.Method;
+import impl.Method;
 
 public class MainTheBest {
     public static void main(String[] args) {

@@ -23,11 +23,13 @@ public class ContactRepositoryImpl implements Repositry<Contact> {
     @Override
     public Contact save(Contact contact) {
         int i = 0;
-        while (!indexs.isEmpty() && indexs.contains(i)){
-            i++;   //todo: index does not incrementa
+        while (!indexs.isEmpty() && indexs.contains(++i)){
+            i++;   //todo: index does not incrementa\
+            indexs.add(i);
         }
         contact.setId(String.valueOf(i));
         if (phoneList.add(contact)) {
+            indexs.add(i);
             return contact;
         } else {
             throw new RuntimeException("Не удалось добавить элемент");

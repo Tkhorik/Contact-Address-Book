@@ -8,6 +8,6 @@ public class Runner {
         contactRepository.save(new Contact("lastname", "firstname"));
         contactRepository.save(new Contact("lastname2", "firstname2"));
         contactRepository.save(new Contact("lastName", "firstName", "address", "phoneNumber", "12345678"));
-        contactRepository.findAll().stream().forEach(System.out::println);
+        contactRepository.findAll().forEach(System.out::println);
     }
 }

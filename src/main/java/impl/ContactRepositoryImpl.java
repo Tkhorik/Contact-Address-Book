@@ -24,7 +24,7 @@ public class ContactRepositoryImpl implements Repositry<Contact> {
     public Contact save(Contact contact) {
         int i = 0;
         while (!indexs.isEmpty() && indexs.contains(++i)){
-            i++;   //todo: index does not incrementa\
+//            i++;
             indexs.add(i);
         }
         contact.setId(String.valueOf(i));
